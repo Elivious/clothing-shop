@@ -4,13 +4,8 @@ import './pages/homepage/homepage.styles.scss';
 import {Route, Switch} from 'react-router-dom';
 import ShopPage from './shop/shop.component'
 import Header from './components/header/header.component'
+import SignInAndSignUpPage from './pages/homepage/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE</h1>
-    <a href='/'>HOME</a>
-  </div>
-)
 
 function App() {
   return (
@@ -19,6 +14,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
+        <Route path='/signin' component={SignInAndSignUpPage}/>
       </Switch>
     </div>
   );
